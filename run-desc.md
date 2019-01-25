@@ -59,14 +59,13 @@ npm run d #部署
 使用http地址(指向github或者cdn)
 </pre>
 
-
 ## docker 部署
 <pre>
 sudo docker login
 chengt
 ...
 
-docker run --name gitbook -itd -p 4000:4000 -v ~/gitbooks:/root/gitbooks chengt/gitbook:3-my-alpine
+docker run --name gitbook -itd -p 4000:4000 -v ~/gitbooks:/root/gitbooks chengt/gitbook-my:3-alpine
 docker exec -it gitbook ash
 cat ~/.ssh/id_rsa.pub
 
